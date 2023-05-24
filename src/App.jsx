@@ -1,17 +1,26 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
-
+import { useState } from 'react'
+import phrases from './utils/phrases.json'
+import ButtonCard from './components/buttonCard'
+import PhrasesCard from './components/phrasesCard'
+import getRamdomElementFromArray from './utils/RamdomElementArray'
+const arrBackground=[1,2,3,4]
 function App() {
-  const [count, setCount] = useState(0)
-
+  const initialValue=getRamdomElementFromArray(phrases);
+  const initialPath=getRamdomElementFromArray(arrBackground)
+  const [PharseRandom,setpharseRamdom]=(useState(initialValue));
+  const [pathRandom,setpathRandom]=useState(initialPath)
+  const objStyle={
+    backgroundImage: `url('img/fondo${pathRandom}.jpg')`
+  }
   return (
-    <>
-    <h1>hola mundo</h1>
-    
-
-    </>
+    <div style={objStyle} className='app'>
+        <h1 className='app__tittle'>Galleta de la Fortuna app</h1> 
+        <ButtonCard setpharseRamdom={setpharseRamdom} 
+          setpathRandom={setpathRandom}
+          arrBackground={arrBackground}/>
+        <PhrasesCard PharseRandom={PharseRandom}/>
+    </div>
   )
 }
 
