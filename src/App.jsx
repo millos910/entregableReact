@@ -1,7 +1,7 @@
 import './App.css'
 import { useState } from 'react'
 import phrases from './utils/phrases.json'
-import ButtonCard from './components/buttonCard'
+import ButtonCard from './components/ButtonCard'
 import PhrasesCard from './components/phrasesCard'
 import getRamdomElementFromArray from './utils/RamdomElementArray'
 const arrBackground=[1,2,3,4]
@@ -20,6 +20,9 @@ function App() {
           setpathRandom={setpathRandom}
           arrBackground={arrBackground}/>
         <PhrasesCard PharseRandom={PharseRandom}/>
+        <footer className='footer'>
+          <h3><b>Created by: </b>Emilio Montero</h3>
+        </footer>
     </div>
   )
 }
