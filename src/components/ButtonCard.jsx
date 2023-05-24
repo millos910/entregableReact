@@ -7,7 +7,6 @@ const buttonCard = ({setpharseRamdom,setpathRandom,arrBackground} ) => {
     const newPath=getRamdomElementFromArray(arrBackground)
     setpathRandom(newPath)
   }
-  
   return (
     <button className="btn" onClick={handleRandomPhrase}>probar mi suerte hoy</button>
   )

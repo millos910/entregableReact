@@ -18,16 +18,21 @@
     padding: 1rem;
 }
 .card{
-    padding: 1.5em;
-    border-radius: 1em;
+    background-image: url(/public/img/rectangle1.svg);
+    background-size: cover;
+
+    height: 100%;
     width: 100%;
-    max-width: 400px;
-    background-color:#F6FFDE;
-    border: 0 auto;
+    background-position: center;
+    min-height: 37vh;
+    display: flex;
     justify-content: center;
-    line-height: 1.8;
-    border: 0.15em solid #D6E8DB;
-    box-shadow: 0.15em 0.15em 1em #0C134F;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+    min-width: 690px;
+    max-width: 400px;
+    min-height: 285px;
 }
 .btn{
     padding: 1.5em;
@@ -37,6 +42,7 @@
     color: #0C134F;
     border: 0.2em solid currentColor ;
     transition: transform 100ms, filter 100ms ease;
+    width: 200px;
 }
 .btn:hover{
     transform: scale(1.05);

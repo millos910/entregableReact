@@ -14,16 +14,19 @@ function App() {
     backgroundImage: `url('img/fondo${pathRandom}.jpg')`
   }
   return (
+    <>
     <div style={objStyle} className='app'>
-        <h1 className='app__tittle'>Galleta de la Fortuna app</h1> 
+        <h1 className='app__tittle'>Galleta de la Fortuna app</h1>
+        <PhrasesCard PharseRandom={PharseRandom}/> 
         <ButtonCard setpharseRamdom={setpharseRamdom} 
           setpathRandom={setpathRandom}
           arrBackground={arrBackground}/>
-        <PhrasesCard PharseRandom={PharseRandom}/>
+        
         <footer className='footer'>
           <h3><b>Created by: </b>Emilio Montero</h3>
         </footer>
     </div>
+    </>
   )
 }
 
