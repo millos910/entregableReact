@@ -2,7 +2,7 @@ import './App.css'
 import { useState } from 'react'
 import phrases from './utils/phrases.json'
 import ButtonCard from './components/ButtonCard'
-import PhrasesCard from './components/phrasesCard'
+import PhrasesCard from './components/PhrasesCard'
 import getRamdomElementFromArray from './utils/RamdomElementArray'
 const arrBackground=[1,2,3,4]
 function App() {
